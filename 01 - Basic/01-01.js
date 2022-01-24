@@ -6,10 +6,19 @@ Current time is :  PM :  :
 
 "use strict";
 
+const date = new Date();
+
 (function getCurrentDay() {
-   
+   let day = date.getDate();
+   let month = date.getMonth() + 1;
+   let year = date.getFullYear();
+   console.log("Today is : ", day, "/", month,"/", year);
 })();
 
 (function getCurrentTime() {
-    
-})();         
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+
+    console.log("Current time is : ", hours, " PM : ", minutes, " : ", seconds);
+})();

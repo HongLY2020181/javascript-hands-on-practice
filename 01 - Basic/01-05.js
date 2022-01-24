@@ -3,10 +3,18 @@
 */
 
 "use strict";
-(function () {
-    function wordRotate(word) {
-       
+function wordRotate(string) {
+    let split = [...string];
+    let rWord = "";
+    split.unshift(split[split.length-1]);
+    split.pop();
+    for ( var i = 0 ; i <= split.length-1; i++) {
+        rWord += split[i];
     }
 
-   
-})
+    console.log(rWord);
+    
+}
+console.log(setInterval(wordRotate("w3resource"), 1000));
+
+  

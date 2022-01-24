@@ -13,12 +13,15 @@ Expected Output :
     }
 
     function celToFar(cels) {
-       
+        let far = (cels * 9)/5 + 32;
+        console.log(cels , "°C is " , far  ,"°F");
     }
 
     function farToCel(far) {
-        
+        let cel = ((far-32)/9) * 5;
+        console.log(far , "°F is " , cel , "°C");
     }
 
+    convert(60, 45);
    
-});
+})();
