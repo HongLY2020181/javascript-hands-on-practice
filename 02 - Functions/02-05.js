@@ -4,11 +4,18 @@ Example string : 'the quick brown fox'
 Expected Output : 'The Quick Brown Fox '
 */
 "use strict";
-(function () {
-    function capitalise(pickedSentence) {
-       
-        }
-       
+function capitalise(pickedSentence) {
+    let split = pickedSentence.split(" ");
+    for (var i = 0; i < split.length; i++) {
+        split[i] = split[i].charAt(0).toUpperCase() + split[i].slice(1);
     }
-    
-})
+
+    let str = split.join(" ");
+
+    console.log(str);
+
+        
+       
+}
+
+capitalise("the quick brown fox");
