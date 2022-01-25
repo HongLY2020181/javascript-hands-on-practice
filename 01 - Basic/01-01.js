@@ -9,10 +9,8 @@ Current time is :  PM :  :
 const date = new Date();
 
 (function getCurrentDay() {
-   let day = date.getDate();
-   let month = date.getMonth() + 1;
-   let year = date.getFullYear();
-   console.log("Today is : ", day, "/", month,"/", year);
+   let weeks = ["Sunday", "Monday", "Tuesday", "Wesdnesday", "Thursday", "Friday", "Saturday"];
+   console.log("Today is : " + weeks[date.getDay()] + ".");
 })();
 
 (function getCurrentTime() {

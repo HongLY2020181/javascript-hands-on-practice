@@ -3,14 +3,17 @@ Write a JavaScript program where the program takes a random integer between 1 to
 */
 
 
-let user = prompt("choose a number between 1 to 10: ");
+function random(user) {
 
-let guess = Math.floor(Math.random() * 11);
+    let guess = Math.floor(Math.random() * 11);
 
-if (user === guess) {
-    console.log("Good Work");
-}
+    if (user === guess) {
+        console.log("Good Work");
+    }
 
-else {
-    console.log("Not matched");
-}
+    else {
+        console.log("Not matched");
+    }
+} 
+
+random(1);
