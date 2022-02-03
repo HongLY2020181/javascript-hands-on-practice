@@ -16,5 +16,6 @@ function wordRotate(string) {
     
 }
 console.log(setInterval(wordRotate("w3resource"), 1000));
+//does not really work
 
   

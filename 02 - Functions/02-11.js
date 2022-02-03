@@ -6,7 +6,11 @@ Expected Output : 2,4
 "use strict";
 (function () {
     function greLow(sampleArray) {
+        sampleArray.sort();   
+        console.log(sampleArray[1], sampleArray[sampleArray.length - 2]);
         
     }
+
+    greLow([2, 4, 6, 9, 7, 8]);
     
-})
+})();

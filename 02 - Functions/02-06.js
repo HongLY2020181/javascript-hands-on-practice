@@ -7,10 +7,20 @@ Expected Output : 'Development'
 "use strict";
 (function () {
     function longestWord(pickedSentence) {
-        
-            }
+        var array1 = pickedSentence.split(' ');
+        var result = array1[0];
+      
+        for(var x = 1 ; x < array1.length ; x++)
+        {
+          if(result.length < array1[x].length)
+          {
+          result = array1[x];
+          } 
         }
+        return result;
         
     }
+
+    console.log(longestWord("Web Development Tutorial"));
     
-})
+})();
